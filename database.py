@@ -1,7 +1,6 @@
 import sqlite3
 
 conn = sqlite3.connect("users.db")
-
 cursor = conn.cursor()
 
 # ==========================
@@ -79,7 +78,6 @@ CREATE TABLE IF NOT EXISTS movie_reviews (
 """)
 
 conn.commit()
-
 conn.close()
 
 print("Database created successfully")
